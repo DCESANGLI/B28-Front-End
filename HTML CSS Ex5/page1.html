@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>HTML CSS Ex5</title>
+
+        <style>
+            #table-ex{
+                border:1px solid blue;
+                border-collapse: collapse;
+                width:500px;
+            }
+
+            #table-ex th{
+                color:red;
+            }
+
+            #table-ex th, td{
+                border:1px solid blue;
+                padding:10px;
+            }
+
+            tr{
+                -webkit-transition:background-color 2s;
+            }
+
+            tr:hover{
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+
+    <body style="border:2px solid black;padding:10px;">
+        <h1>HTML Table Ex1</h1>
+        <hr/>
+
+        <table id="table-ex">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>EMPLOYEE</th>
+                    <th>DEPATMENT</th>
+                    <th>ROLE</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Smith</td>
+                    <td>Testing</td>
+                    <td>Analyst</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>John</td>
+                    <td>Development</td>
+                    <td>Engineer</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Eliz</td>
+                    <td>Testing</td>
+                    <td>Consultant</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Peter</td>
+                    <td>Testing</td>
+                    <td>Analyst</td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>James</td>
+                    <td>Testing</td>
+                    <td>Engineer</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
