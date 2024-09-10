@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <title>HTML CSS Ex6</title>
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tr{
+            -webkit-transition:background-color 2s;
+        }
+
+        tbody tr:hover{
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* employee table and images */
+
+        #div-emp {
+            display: grid;
+            grid-template-columns: 60% 40%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        #part1 table th {
+            color: red;
+        }
+
+        #part3 table th {
+            color: blue;
+        }
+
+        .img-list {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* End of employee table and images */
+
+        .odd{
+            color:green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Table Assignment</h1>
+    <hr />
+
+    <section id="page-design-1">
+        <div id="div-emp">
+            <div id="part1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>EMPLOYEE</th>
+                            <th>ROLE</th>
+                            <th>LOCATION</th>
+                            <th>SALRY</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Smith Devid</td>
+                            <td>Manager</td>
+                            <td>Delhi</td>
+                            <td>INR 56000</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Smith Devid</td>
+                            <td>Manager</td>
+                            <td>Delhi</td>
+                            <td>INR 56000</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Smith Devid</td>
+                            <td>Manager</td>
+                            <td>Delhi</td>
+                            <td>INR 56000</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Smith Devid</td>
+                            <td>Manager</td>
+                            <td>Delhi</td>
+                            <td>INR 56000</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Smith Devid</td>
+                            <td>Manager</td>
+                            <td>Delhi</td>
+                            <td>INR 56000</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Smith Devid</td>
+                            <td>Manager</td>
+                            <td>Delhi</td>
+                            <td>INR 56000</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Smith Devid</td>
+                            <td>Manager</td>
+                            <td>Delhi</td>
+                            <td>INR 56000</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Smith Devid</td>
+                            <td>Manager</td>
+                            <td>Delhi</td>
+                            <td>INR 56000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="part2">
+                <img src="https://placehold.co/300x300/orange/white?text=one" alt="" class="img-list" />
+                <img src="https://placehold.co/300x300/green/white?text=two" alt="" class="img-list" />
+                <img src="https://placehold.co/300x300/orangered/white?text=three" alt="" class="img-list" />
+                <img src="https://placehold.co/300x300/lightgreen/white?text=four" alt="" class="img-list" />
+            </div>
+        </div>
+    </section>
+
+    <section id="page-design-2">
+        <div id="div-summery">
+            <div id="part3">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>SHARES</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="odd">
+                            <td>1</td>
+                            <td>$900</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>$900</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>1</td>
+                            <td>$900</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>$900</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>1</td>
+                            <td>$900</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>$900</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="part4">
+
+            </div>
+
+            <div id="part5">
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
