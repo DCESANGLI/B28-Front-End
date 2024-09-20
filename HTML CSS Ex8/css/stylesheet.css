@@ -1,0 +1,40 @@
+.header{
+    color:darkred;
+    text-shadow: 1px 1px 5px grey;
+    font-family: 'Playpen Sans';
+
+    animation:HeaderAnimation 2s infinite;
+}
+
+@keyframes HeaderAnimation{
+    from{
+        color:darkorange;
+        background-color: whitesmoke;
+        text-shadow: 2px 2px 8px red;
+        text-align: right;
+    }
+
+    to{
+        color:darkred;
+        background-color: lightyellow;
+        text-shadow: 2px 2px 8px yellow;
+        text-align: center;
+    }
+}
+
+.logo{
+    font-size: 20px;
+    animation: LogoAnimation 9s infinite;
+}
+
+@keyframes LogoAnimation{
+    from{
+        color:darkblue;
+        transform:rotate(0deg);
+    }
+
+    to{
+        color:green;
+        transform: rotate(360deg);
+    }
+}
