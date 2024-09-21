@@ -38,3 +38,42 @@
         transform: rotate(360deg);
     }
 }
+
+.login-card{
+    border:1px solid;
+    padding:10px;
+    margin:10px;
+    width:400px;
+}
+
+.login-card h1{
+    background-color: darkgreen;
+    color:white;
+    text-align: center;
+}
+
+.form-label{
+    font-weight: bold;
+    margin:0px;
+    color:darkgrey;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.btn button{
+    background-color: darkgoldenrod;
+    color:white;
+    border:none;
+    padding:10px;
+    width:100px;
+    font:bold 18px 'calibri';
+    box-shadow: 2px 2px 9px grey;
+    border-radius: 10px;
+}
