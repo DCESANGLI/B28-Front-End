@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>JavaScript Ex3</title>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
+
+    <body>
+        <h1>JavaScript Product Discount Calculations</h1>
+        <hr/>
+
+        <div class="section">
+            <input type="text" placeholder="Enter Product Name" id="product-name" />
+            
+            <br/><br/>
+            <input type="text" placeholder="Enter Product Cost" id="product-cost" />
+            
+            <br/><br/>
+            <input type="text" placeholder="Enter Product Qtys" id="product-qty" />
+            
+            <br/><br/>
+            <button onclick="purchase()">Calculate Bill</button>
+
+            <h3 id="discount">null</h3>
+            <h3 id="total-bill">null</h3>
+        </div>
+
+
+        <script>
+            function purchase()
+            {
+                var cost = Number(document.getElementById("product-cost").value);
+                var qty = Number(document.getElementById("product-qty").value);
+
+                var discount = (cost*qty)*5/100;
+                document.getElementById("discount").innerHTML = "Total Disount is " + discount;
+
+                var netbill = (cost*qty) - discount;
+                document.getElementById("total-bill").innerHTML = "Total Bill is " + netbill;
+            }
+        </script>
+    </body>
+</html>

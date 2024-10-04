@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>JavaScript Ex3</title>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
+
+    <body>
+        <h1>JavaScript to calcualte area of shapes</h1>
+        <hr/>
+
+        <div class="section">
+            <input type="text" id="txt-radius" placeholder="Enter radius" />
+            <button onclick="circle()">Calcualte Area of circle</button> 
+
+            <h3 id="h3-ans1">null</h3>
+        </div>
+
+
+        <div class="section">
+            <input type="text" id="txt-base" placeholder="Enter base" />
+            <input type="text" id="txt-height" placeholder="Enter height" />
+
+            <button onclick="triangle()">Calculate Area of Triangle</button>
+
+            <h3 id="h3-ans2">null</h3>
+        </div>
+
+
+        <script>
+            function circle()
+            {
+                var radius = Number(document.getElementById("txt-radius").value);
+
+                var areac = 3.14*radius*radius;
+
+                document.getElementById("h3-ans1").innerHTML = "Area of circle is "  + areac;
+            }  
+
+
+            function triangle()
+            {
+                var base = Number(document.getElementById("txt-base").value);
+                var height = Number(document.getElementById("txt-height").value);
+
+                var areat = 0.5*base*height;
+                document.getElementById("h3-ans2").innerHTML = "Area of Triangle is " + areat;
+            }
+        </script>
+
+    </body>
+</html>

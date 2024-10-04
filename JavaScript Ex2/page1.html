@@ -1,40 +1,40 @@
 <html>
-    <head>
-        <title>JavaScript Ex2</title>
-    </head>
 
-    <body>
-        <h1>JavaScript Textboad Read using html event</h1>
-        <hr/>
+<head>
+    <title>JavaScript Ex2</title>
+</head>
 
-        <input type="text" id="txt-username" placeholder="Enter your name"/>
-        <button onclick="show()">Show</button>
+<body>
+    <h1>JavaScript Textboad Read using html event</h1>
+    <hr />
 
-        <br/><br/>
+    <input type="text" id="txt-username" placeholder="Enter your name" />
+    <button onclick="show()">Show</button>
 
-        <input type="text" id="txt-x" placeholder="Enter number1" />
-        <input type="text" id="txt-y" placeholder="Enter number2" />
+    <br /><br />
 
-        <button onclick="addition()">addition</button>
+    <input type="text" id="txt-x" placeholder="Enter number1" />
+    <input type="text" id="txt-y" placeholder="Enter number2" />
 
-        <script>
-            function show()
-            {
-                var user = document.getElementById("txt-username").value;
-                alert("Welcome " + user);
-            }
+    <button onclick="addition()">addition</button>
 
-            function addition()
-            {
-                var a = Number(document.getElementById("txt-x").value);
-                var b = Number(document.getElementById("txt-y").value);
+    <script>
+        function show() {
+            var user = document.getElementById("txt-username").value;
+            alert("Welcome " + user);
+        }
 
-                alert("first number is " + a + " and second nunmber is " + b);
+        function addition() {
+            var a = Number(document.getElementById("txt-x").value);
+            var b = Number(document.getElementById("txt-y").value);
 
-                var sum = a + b;
-                alert("Addition is " + sum);
+            alert("first number is " + a + " and second nunmber is " + b);
 
-            }
-        </script>
-    </body>
+            var sum = a + b;
+            alert("Addition is " + sum);
+
+        }
+    </script>
+</body>
+
 </html>
